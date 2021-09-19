@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SubjectBridgeService } from 'src/app/service/subject-bridge.service';
 
 @Component({
   selector: 'app-main',
@@ -6,13 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-
-  constructor() { }
-
+  constructor(private subjectBridgeService:SubjectBridgeService) { }
+ 
+  elementArr:string[] = ['sectionCarousel','sectionAbout']
   ngOnInit(): void { 
+    this.subjectBridgeService.routeToSection$.subscribe(res=>{ 
+      let el = document.getElementById(this.elementArr[res]);
+      el != null ? el.scrollIntoView() : null; 
+    }) 
   } 
 
- 
-
+  
 }
 

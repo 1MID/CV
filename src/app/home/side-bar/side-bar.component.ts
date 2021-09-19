@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SubjectBridgeService } from 'src/app/service/subject-bridge.service';
 
 @Component({
   selector: 'app-side-bar',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private subjectBridgeService:SubjectBridgeService) { }
 
   ngOnInit(): void {
+  }
+
+  routeToSection(index:number){ 
+    this.subjectBridgeService.routeToSectionChange(index);
   }
 
 }
