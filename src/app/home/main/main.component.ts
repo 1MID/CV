@@ -9,7 +9,7 @@ import { SubjectBridgeService } from 'src/app/service/subject-bridge.service';
 export class MainComponent implements OnInit {
   constructor(private subjectBridgeService:SubjectBridgeService) { }
  
-  elementArr:string[] = ['sectionCarousel','sectionAbout']
+  elementArr:string[] = ['sectionCarousel','sectionAbout','sectionExperience']
   ngOnInit(): void { 
     this.subjectBridgeService.routeToSection$.subscribe(res=>{ 
       let el = document.getElementById(this.elementArr[res]);

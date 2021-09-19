@@ -10,6 +10,7 @@ import { MainComponent } from './home/main/main.component';
 import { CustomizeCarouselComponent } from './home/main/customize-carousel/customize-carousel.component';
 import { SkillsContainerComponent } from './home/main/skills-container/skills-container.component';
 import { CustomizeCardComponent } from './home/main/skills-container/customize-card/customize-card.component';
+import { ExperienceStepperComponent } from './home/main/experience-stepper/experience-stepper.component';
 
 //lib 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
@@ -22,7 +23,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     MainComponent,
     CustomizeCarouselComponent,
     SkillsContainerComponent,
-    CustomizeCardComponent
+    CustomizeCardComponent,
+    ExperienceStepperComponent
   ],
   imports: [
     BrowserModule,
