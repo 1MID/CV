@@ -1,13 +1,12 @@
 .wrap{
 
-    height: 100%; 
-    background-color: #0a0a0a;
-
+    height: 100%;  
+    background-color:#f0f0f0; 
     .carousel-item {
         img {
             width: 80vw;
             height: 100vh; 
-            object-fit: contain;
+            object-fit: fill; 
         }
     }
 }

@@ -1,26 +1,10 @@
 <div class="wrap">
-    <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'" style="margin-top: auto; margin-bottom: auto;">
+    <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
         <mdb-carousel-item  *ngFor="let image of images;">
           <div class="view w-100">
             <img class="d-block w-100" src={{image.path}}>
-            <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+            <div class="rgba-black-light waves-light" mdbWavesEffect></div>
           </div> 
         </mdb-carousel-item> 
-    </mdb-carousel>  
-
-    
-</div>
- 
-<div class="wrap" style="background-color: #5a5a5a;">
-    <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'" style="margin-top: auto; margin-bottom: auto;">
-        <mdb-carousel-item  *ngFor="let image of images;">
-          <div class="view w-100">
-            <img class="d-block w-100" src={{image.path}}>
-            <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
-          </div> 
-        </mdb-carousel-item> 
-    </mdb-carousel>  
-
-    
-</div>
- 
+    </mdb-carousel>   
+</div> 

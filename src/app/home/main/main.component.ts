@@ -14,9 +14,9 @@ export class MainComponent implements OnInit {
 
 
   images = [
-    {path: '/assets/slide-img/3.jpg'},
-    {path: '/assets/slide-img/4.jpg'},
-    {path: '/assets/slide-img/5.png'},
+    {path: 'assets/slide-img/1.jpg'},
+    {path: 'assets/slide-img/2.jpg'},
+    {path: 'assets/slide-img/3.jpg'},
   ]
 
 }
