@@ -9,7 +9,15 @@ export class MainComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { 
+  } 
+
+
+  images = [
+    {path: '/assets/slide-img/3.jpg'},
+    {path: '/assets/slide-img/4.jpg'},
+    {path: '/assets/slide-img/5.png'},
+  ]
 
 }
+

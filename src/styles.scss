@@ -51,3 +51,10 @@ table {
 // font-family: 'Lato', sans-serif;
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'Poppins', sans-serif;
+
+//hide-scroll-bar-but-while-still-being-able-to-scroll
+::-webkit-scrollbar {
+    display: none;
+}
+
+ 

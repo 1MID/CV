@@ -4,7 +4,7 @@
     padding-bottom: 2vh;
     height: 100%; 
     box-sizing: border-box;
-
+    background-color:#f0f0f0;
     .title{
         font-size: 2vw; 	
         font-family: 'Poppins', sans-serif;
@@ -25,10 +25,11 @@
     
     .footer{
         position: absolute;
-        bottom: 10vh;   
+        bottom: 5vh;   
         width: 100%;
         text-align: center; 
         small{
+            color: #5a5a5a;
             font-size: 0.5vw;
         }
     }
