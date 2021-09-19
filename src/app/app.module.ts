@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SideBarComponent } from './home/side-bar/side-bar.component'; 
 import { MainComponent } from './home/main/main.component';
+import { CustomizeCarouselComponent } from './home/main/customize-carousel/customize-carousel.component';
+import { SkillsContainerComponent } from './home/main/skills-container/skills-container.component';
+import { CustomizeCardComponent } from './home/main/skills-container/customize-card/customize-card.component';
 
 //lib 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
@@ -16,7 +19,10 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     AppComponent,
     HomeComponent,
     SideBarComponent, 
-    MainComponent
+    MainComponent,
+    CustomizeCarouselComponent,
+    SkillsContainerComponent,
+    CustomizeCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,10 @@
+<div class="wrap">
+    <p class="title">About Me</p> 
+
+    <div class="flex-container">
+        <div *ngFor="let itemObj of skillObj;"> 
+            <app-customize-card [itemObj]="itemObj"></app-customize-card> 
+        </div>
+    </div>
+
+</div>

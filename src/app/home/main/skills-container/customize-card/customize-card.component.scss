@@ -1,0 +1,37 @@
+.flex-box{
+    margin-top: 5vh;
+    margin-left: 10vw;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    .img-container{
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 50%; 
+        display: flex;
+        padding: 1vw;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 3vw; 
+        }
+    }
+
+    .text-container{
+        display: flex;
+        flex-direction: column; 
+        font-size: 1vw;
+        font-family: 'Lato', sans-serif;
+        margin-left: 1.5vw;
+        margin-top: 0.7vh;
+        .title{
+            font-weight: bolder;
+        }
+        .content{
+            opacity: 0.8;
+            margin-top: 1vh;
+            white-space: pre;
+            line-height: 3vh;
+        }
+    }
+ 
+}

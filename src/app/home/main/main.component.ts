@@ -12,12 +12,7 @@ export class MainComponent implements OnInit {
   ngOnInit(): void { 
   } 
 
-
-  images = [
-    {path: 'assets/slide-img/1.jpg'},
-    {path: 'assets/slide-img/2.jpg'},
-    {path: 'assets/slide-img/3.jpg'},
-  ]
+ 
 
 }
 
