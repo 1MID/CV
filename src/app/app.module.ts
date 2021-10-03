@@ -11,9 +11,13 @@ import { CustomizeCarouselComponent } from './home/main/customize-carousel/custo
 import { SkillsContainerComponent } from './home/main/skills-container/skills-container.component';
 import { CustomizeCardComponent } from './home/main/skills-container/customize-card/customize-card.component';
 import { ExperienceStepperComponent } from './home/main/experience-stepper/experience-stepper.component';
+import { TechnologyStackComponent } from './home/main/technology-stack/technology-stack.component';
+import { environment } from 'src/environments/environment';
 
 //lib 
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { MDBBootstrapModule } from 'angular-bootstrap-md'; 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database'
 
 @NgModule({
   declarations: [
@@ -24,12 +28,15 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     CustomizeCarouselComponent,
     SkillsContainerComponent,
     CustomizeCardComponent,
-    ExperienceStepperComponent
+    ExperienceStepperComponent,
+    TechnologyStackComponent, 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
