@@ -3,13 +3,14 @@
 # compiled output
 /dist
 /tmp
-/out-tsc
-/src/app/environments/*.ts
+/out-tsc 
 # Only exists if Bazel was run
 /bazel-out
 
 # dependencies
 /node_modules
+/src/environments/environment.ts
+/src/environments/environment.prod.ts
 
 # profiling files
 chrome-profiler-events*.json
@@ -43,4 +44,4 @@ testem.log
 
 # System Files
 .DS_Store
-Thumbs.db
+Thumbs.db 
