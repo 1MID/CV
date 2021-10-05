@@ -1,0 +1,24 @@
+<div class="wrap">
+
+    <div class="title-container">
+        <span class="post-title">
+            {{theme}}
+        </span>
+        <button class="show-list-btn" (click)="postList.toggle()" mdbWavesEffect>
+            <mdb-icon *ngIf="!postList.isCollapsed" fas icon="angle-double-up"></mdb-icon>
+            <mdb-icon *ngIf="postList.isCollapsed" fas icon="angle-double-down"></mdb-icon>
+        </button>
+    </div>
+
+    <hr class="post-hr">
+    <div mdbCollapse [isCollapsed]="true" #postList="bs-collapse">
+        <p class="post-content" *ngIf="topicShouldShow">
+            <ng-container *ngFor="let key of keys;index as i">
+                <a href="/">
+                   key
+                </a>
+                <br/>
+            </ng-container>
+        </p>
+    </div>
+</div>

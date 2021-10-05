@@ -1,0 +1,12 @@
+<div class="wrap">
+    <div class="title-container">
+        <p class="title">Medium Post</p>
+    </div>
+
+    <div class="flex-container">
+        <ng-container *ngFor="let theme of dbMediumPostTheme;index as i">
+            <!-- +1是因為一開始有一個空的{} -->
+            <app-collapse-item  [theme]="theme" [list]="dbMediumPostList[i+1]"></app-collapse-item>
+        </ng-container>
+    </div>
+</div>

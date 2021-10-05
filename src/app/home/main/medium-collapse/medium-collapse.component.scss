@@ -1,0 +1,19 @@
+.wrap{
+    padding-top: 5vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 10vh;
+
+    .title{
+        font-size: 1.3vw;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+}

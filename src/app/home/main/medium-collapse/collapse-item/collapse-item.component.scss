@@ -1,0 +1,29 @@
+
+.wrap{
+    margin-top: 3vh;
+
+    .title-container{
+        width: 100%;
+        display: flex;
+
+        .post-title{
+            font-weight: bold;
+        }
+        .show-list-btn{
+            margin-left: auto;
+            outline:  none;
+            border: none;
+            background: none;
+        }
+    }
+
+
+    .post-hr{
+        border: 1px solid #141414;
+        width: 100%;
+        opacity: 0.15;
+    }
+    .post-content{
+        margin-left: 7vw;
+    }
+}
