@@ -14,8 +14,8 @@
     <div mdbCollapse [isCollapsed]="true" #postList="bs-collapse">
         <p class="post-content" *ngIf="topicShouldShow">
             <ng-container *ngFor="let key of keys;index as i">
-                <a href="/">
-                   key
+                <a href={{list[key].url}}>
+                   {{list[key].name}}
                 </a>
                 <br/>
             </ng-container>

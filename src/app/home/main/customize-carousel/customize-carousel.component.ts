@@ -12,7 +12,7 @@ export class CustomizeCarouselComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  
+  // https://unsplash.com/s/photos/code
   images = [
     {path: 'assets/slide-img/1.jpg'},
     {path: 'assets/slide-img/2.jpg'},
